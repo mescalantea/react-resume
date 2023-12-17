@@ -4,7 +4,7 @@ export const SEO = ({ name, ocupation, description }) => {
   return (
     <Helmet>
       <title>{name} - {ocupation}</title>
-      <meta name="description" content={description} />
+      <meta name="description" content={description.join(' ')} />
     </Helmet>
   );
 };
