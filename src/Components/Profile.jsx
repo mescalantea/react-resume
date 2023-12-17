@@ -1,4 +1,3 @@
-import React from "react";
 import { Options } from "./Options";
 
 export const Profile = ({
@@ -24,12 +23,15 @@ export const Profile = ({
           <span className="home__information">
             <i className="bx bx-map home__icon" /> {location}
           </span>
-          <span className="home__information">
-            <i className="bx bx-envelope home__icon" /> {email}
-          </span>
-          <span className="home__information">
-            <i className="bx bx-phone home__icon" /> {telephone}
-          </span>
+          {!email ? null : (
+            <a href={`mailto:${email}`} className="home__information">
+              <i className="bx bx-envelope home__icon" /> {email}
+            </a>)}
+          {!telephone ? null : (
+            <span className="home__information">
+              <i className="bx bx-phone home__icon" /> {telephone}
+            </span>
+          )}
         </div>
       </div>
       <Options />

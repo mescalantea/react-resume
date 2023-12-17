@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Skills = ({
   technicalLabel,
   softLabel,
@@ -12,7 +10,7 @@ export const Skills = ({
         <h2 className="section-title">{technicalLabel}</h2>
         <div className="skills__content bd-grid">
           <ul className="skills__data">
-            {technicalSkills.map((skill) => <Skill key={skill} skill={skill} />)}
+            {technicalSkills.map((skill, i) => <Skill key={i} skill={skill} />)}
           </ul>
         </div>
       </section>
@@ -20,7 +18,7 @@ export const Skills = ({
         <h2 className="section-title">{softLabel}</h2>
         <div className="skills__content bd-grid">
           <ul className="skills__data">
-            {softSkills.map((skill) => <Skill key={skill} skill={skill} />)}
+            {softSkills.map((skill, i) => <Skill key={i} skill={skill} />)}
           </ul>
         </div>
       </section>

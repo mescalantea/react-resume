@@ -4,7 +4,6 @@ You can easily create your fully beautiful CV / Resume by passing necessary prop
 Just clone or fork the repository and edit [data.js](https://github.com/Maaato/react-resume/blob/master/src/Schemas/Data.js) inside schemas folder and build your own CV.
 
 - Light / Dark mode 🌗
-- Snowflakes mode ❄️
 
 [Preview](https://react-resume-rho.vercel.app)
 
